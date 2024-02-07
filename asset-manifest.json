@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ifire-health/static/css/main.dbb57611.css",
+    "main.js": "/ifire-health/static/js/main.6c9f2918.js",
+    "static/js/592.698cde02.chunk.js": "/ifire-health/static/js/592.698cde02.chunk.js",
+    "static/media/health-insurance.png": "/ifire-health/static/media/health-insurance.994fba91de30e6e5dd12.png",
+    "static/media/login-back.png": "/ifire-health/static/media/login-back.1c9399c9bdbc57ccaffc.png",
+    "index.html": "/ifire-health/index.html",
+    "main.dbb57611.css.map": "/ifire-health/static/css/main.dbb57611.css.map",
+    "main.6c9f2918.js.map": "/ifire-health/static/js/main.6c9f2918.js.map",
+    "592.698cde02.chunk.js.map": "/ifire-health/static/js/592.698cde02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbb57611.css",
+    "static/js/main.6c9f2918.js"
+  ]
+}
