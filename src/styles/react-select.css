@@ -1,0 +1,226 @@
+/* react-select default styles */
+.Select {
+    position: relative;
+  }
+  
+  .Select * {
+    box-sizing: border-box;
+  }
+  
+  .Select-control {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
+    color: #495057;
+    padding: 5px 10px;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .Select-control:hover {
+    border-color: #adb5bd;
+  }
+  
+  .Select-control .Select-input:focus {
+    outline: none;
+  }
+  
+  .Select-placeholder,
+  .Select--single > .Select-control .Select-value {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    color: #495057;
+    line-height: 1.5;
+  }
+  
+  .Select-placeholder {
+    opacity: 0.5;
+  }
+  
+  .Select--single > .Select-control .Select-value {
+    top: 0;
+    transform: translateY(0);
+    transition: opacity 0.1s ease-out;
+  }
+  
+  .Select.is-disabled .Select-control {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  .Select.is-disabled .Select-control:hover {
+    border-color: #e9ecef;
+  }
+  
+  .Select.is-disabled .Select-input {
+    cursor: not-allowed;
+  }
+  
+  .Select.is-disabled .Select-clear {
+    display: none;
+  }
+  
+  .Select.is-searchable.is-open > .Select-control {
+    cursor: text;
+  }
+  
+  .Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+    cursor: text;
+  }
+  
+  /* Styles for the dropdown menu */
+  .Select-menu-outer {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-top: -1px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .Select-menu {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* Styles for options */
+  .Select-option {
+    padding: 8px 10px;
+    cursor: default;
+  }
+  
+  .Select-option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .Select-option.is-selected {
+    background-color: #cce5ff;
+  }
+  
+  /* Styles for the "clear" indicator */
+  .Select-clear-zone {
+    position: relative;
+    flex: 1;
+    padding-right: 5px;
+  }
+  
+  .Select-clear {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: #868e96;
+    cursor: pointer;
+  }
+  
+  /* Styles for the "dropdown" indicator */
+  .Select-arrow-zone {
+    flex: 0 0 auto;
+    padding-left: 5px;
+  }
+  
+  .Select-arrow {
+    border-color: #868e96 transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+  }
+  
+  .Select--rtl .Select-arrow {
+    border-color: transparent transparent #868e96;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  
+  /* Styles for multi-value container */
+  .Select-multi-value-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  /* Styles for multi-value label */
+  .Select--multi .Select-value {
+    margin: 2px 5px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2px;
+    padding: 3px 10px;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .Select--multi .Select-value-icon {
+    margin-right: 5px;
+  }
+  
+  /* Styles for multi-value remove */
+  .Select--multi .Select-value-icon:hover {
+    color: white;
+    background-color: #0056b3;
+  }
+  
+  .Select--multi .Select-value-icon:active {
+    color: white;
+    background-color: #0056b3;
+  }
+  
+  .Select--multi .Select-value-icon:focus {
+    color: white;
+    background-color: #0056b3;
+  }
+  
+  .Select--multi .Select-value-label {
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .Select--multi .Select-value-icon:hover,
+  .Select--multi .Select-value-icon:focus {
+    cursor: pointer;
+  }
+  
+  /* Styles for multi-value remove */
+  .Select--multi .Select-value-icon:active {
+    cursor: pointer;
+  }
+  
+  /* Styles for loading indicator */
+  .Select-loading-zone {
+    position: relative;
+  }
+  
+  .Select-loading {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    font-size: 0.7em;
+    color: #868e96;
+  }
+  
+  /* Styles for no options message */
+  .Select-noresults {
+    padding: 8px 10px;
+  }
+  
+  /* Styles for error message */
+  .Select-error {
+    color: red;
+  }
+  
